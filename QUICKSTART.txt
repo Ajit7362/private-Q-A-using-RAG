@@ -1,0 +1,78 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     SECUREDOC - QUICK START GUIDE                          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🎯 GET STARTED IN 3 STEPS:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: GET YOUR OPENAI API KEY (5 MINUTES)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open: https://platform.openai.com/api-keys
+2. Sign in (create account if needed)
+3. Click "Create new secret key"
+4. Copy the key (you'll only see it once!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: ADD YOUR API KEY TO .ENV FILE (1 MINUTE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open: .env (in this folder)
+2. Find this line:
+   OPENAI_API_KEY=sk-
+
+3. Paste your key after "sk-":
+   OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxx
+
+4. Save the file (Ctrl+S)
+
+⚠️  NEVER share your API key with anyone!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: RUN SECUREDOC (1 CLICK)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Double-click: run.bat
+
+Your browser will open to: http://localhost:8501
+
+✅ Done! Start uploading PDFs and asking questions!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HOW TO USE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  Upload a PDF
+2️⃣  Configure settings (optional):
+    - Model: gpt-4-turbo (best), gpt-4, gpt-3.5-turbo (cheapest)
+    - Temperature: 0-2 (lower = focused, higher = creative)
+3️⃣  Ask questions
+4️⃣  Get answers with source references
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  IMPORTANT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✖️  NEVER add your real API key to a public GitHub repository
+✖️  NEVER share your .env file
+✖️  API usage costs money - monitor at https://platform.openai.com/usage
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆘 NEED HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "API Key not configured"
+   → Check your .env file has the correct key
+
+❌ "ModuleNotFoundError"
+   → Delete venv310 folder, run setup.bat again
+
+❌ "Connection Error"
+   → Check your internet and OpenAI API status
+
+See README.md for full troubleshooting guide.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👉 Ready? Get your API key first, then double-click run.bat!
+
